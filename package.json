@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yhipolito/cse-341-project1#readme",
   "dependencies": {
+    "body-parser": "^2.3.0",
     "dotenv": "^16.6.1",
     "express": "^4.22.2",
     "mongodb": "^6.21.0"
