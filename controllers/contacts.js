@@ -3,7 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = (req, res) => {
   mongodb
-    .getDb()
+    .getDatabase()
     .db()
     .collection('contacts')
     .find()
@@ -22,7 +22,7 @@ const getSingle = (req, res) => {
   }
   const userId = new ObjectId(req.params.id);
   mongodb
-    .getDb()
+    .getDatabase()
     .db()
     .collection('contacts')
     .find({ _id: userId })
